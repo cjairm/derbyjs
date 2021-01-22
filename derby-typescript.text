@@ -1,0 +1,26 @@
+*install typescript if necessary 
+
+npm install -g typescript
+
+*init typescript project 
+
+tsc --init
+
+*init npm project
+
+npm init -y
+
+*init dependencies for Node to prevent warnings and errors
+
+npm i --save-dev @types/node
+
+*To have something similar to react development
+
+tsconfig.json
+
+-> CHANGE/MODIFY
+"target": "es6"
+"outDir": "./dist"
+-> ADD
+"moduleResolution": "node"
+"rootDir": "./src" // Create folder
